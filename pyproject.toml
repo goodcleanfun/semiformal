@@ -3,14 +3,14 @@ requires = ["setuptools", "setuptools_scm[toml]", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "{{ repo_name }}"
+name = "semiformal"
 dynamic = ["version"]
-description = "{{ description }}"
+description = "Tokenizer for semiformal unicode text using TR-29 segmentation"
 readme = "README.md"
-license = {text = "{{ license }}"}
+license = {text = "MIT"}
 requires-python = ">=3.7"
 authors = [
-    { name = "{{ author }}" },
+    { name = "Al Barrentine" },
 ]
 keywords = [
     "word",
@@ -33,13 +33,13 @@ classifiers = [
 dependencies = []
 
 [project.urls]
-Homepage = "{{ repo_url }}"
-Repository = "{{ repo_url }}"
+Homepage = "https://github.com/goodcleanfun/semiformal"
+Repository = "https://github.com/goodcleanfun/semiformal"
 
 [tool.coverage.run]
 parallel = true
 source = [
-    "python/{{ repo_name }}",
+    "python/semiformal",
 ]
 context = '${CONTEXT}'
 

@@ -22,10 +22,10 @@ setup_args = dict(
     cmdclass = {"build_ext": build_ext_mixed_optimization_level},
     ext_modules = [
         Extension(
-            '{{ repo_name }}._tokenizer',
+            'semiformal._tokenizer',
             glob.glob('python/*.c') + glob.glob('src/*.c') + glob.glob('deps/**/[!utf8proc_data]*.c'),
             include_dirs = ['python', 'src', 'deps', 'deps/utf8proc'],
-            define_macros = [('{{repo_name | upper}}_VERSION', '"0.1.0"')],
+            define_macros = [('SEMIFORMAL_VERSION', '"0.1.0"')],
         )
     ]
 )
