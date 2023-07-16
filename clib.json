@@ -1,6 +1,6 @@
 { 
   "name": "semiformal",
-  "version": "0.4.4",
+  "version": "0.4.5",
   "repo": "goodcleanfun/semiformal",
   "description": "Tokenizer for semiformal unicode text using TR-29 segmentation",
   "keywords": ["tokenizer", "lexer", "re2c", "fsa", "semiformal"],
