@@ -1,5 +1,5 @@
 # Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
-_commit: e4e52b5
+_commit: 4b84c02
 _src_path: gh:goodcleanfun/tokenizer
 author: Al Barrentine
 description: Tokenizer for semiformal unicode text using TR-29 segmentation
