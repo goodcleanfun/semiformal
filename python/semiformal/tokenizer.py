@@ -1,6 +1,7 @@
 from typing import List, Tuple
 
 from semiformal import _tokenizer
+from semiformal.token_types import TokenType
 
 def tokens(text: str) -> Tuple[Tuple[int, int, int]]:
     return _tokenizer.tokens(text)
