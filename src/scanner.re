@@ -21,7 +21,8 @@ re2c:yyfill:enable = 0;
 // Start rules
 [ ]+              { return TOKEN_TYPE_WHITESPACE; }
 [a-zA-Z]+         { return TOKEN_TYPE_WORD; }
-*                 { return TOKEN_TYPE_OTHER; }*/
+*                 { return TOKEN_TYPE_OTHER; }
+*/
 
 }
 
