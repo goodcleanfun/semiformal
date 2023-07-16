@@ -103,7 +103,7 @@ multi_punct_abbreviation = ({letter}+"\.")+{letter}*;
 
 abbrev_word = (({letter}|{possible_word_char})+"\.")+({letter}|{possible_word_char})*;
 
-abbreviation_plus_hyphen = ((({abbrev_word}|{any_word}){hyphen})+({any_word}));
+abbreviation_plus_hyphen = ((({abbrev_word}|{any_word})({hyphen}|{ndash}))+({any_word}));
 
 word = ({basic_word})|({word_non_breaking_mid_char})|({word_end_single_quote})|({hebrew_word_single_quote})|({hebrew_word_double_quote})|({word_extend_num_letter});
 
@@ -128,6 +128,7 @@ invalid_chars = ({control_chars}|{other_format_chars}|{other_private_use_chars})
 {us_phone_number}               { return TOKEN_TYPE_US_PHONE; }
 {international_phone_number}    { return TOKEN_TYPE_INTL_PHONE; }
 
+{abbreviation_plus_hyphen}      { return TOKEN_TYPE_WORD; }
 {acronym}                       { return TOKEN_TYPE_ACRONYM; }
 
 {number}                        { return TOKEN_TYPE_NUMERIC; }
