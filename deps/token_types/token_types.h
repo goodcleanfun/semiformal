@@ -10,7 +10,7 @@ Word types
 
 // Any letter-only word (includes all unicode letters)
 #define TOKEN_TYPE_WORD 1
-// Loose abbreviations (roughly anything containing a "." as we don't care about sentences in addresses)
+// Abbreviations if used by the tokenizer, otherwise can use WORD + PERIOD and model out later
 #define TOKEN_TYPE_ABBREVIATION 2
 // For languages that don't separate on whitespace (e.g. Chinese, Japanese, Korean), separate by character
 #define TOKEN_TYPE_IDEOGRAPHIC_CHAR 3
