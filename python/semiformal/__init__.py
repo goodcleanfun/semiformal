@@ -1,4 +1,4 @@
-__version__ = "0.4.11"
+__version__ = "0.5.0"
 
 from .tokenizer import tokenize
 from .token_types import TokenType
