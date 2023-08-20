@@ -25,7 +25,7 @@ setup_args = dict(
             'semiformal._tokenizer',
             glob.glob('python/*.c') + glob.glob('src/*.c') + glob.glob('deps/**/[!utf8proc_data]*.c'),
             include_dirs = ['python', 'src', 'deps', 'deps/utf8proc'],
-            define_macros = [('SEMIFORMAL_VERSION', '"0.6.1"')],
+            define_macros = [('SEMIFORMAL_VERSION', '"0.6.2"')],
         )
     ]
 )
