@@ -16,6 +16,7 @@ uint16_t scan_token(scanner_t *s)
 #define YYLIMIT     (s->end)
 /*!re2c
 re2c:yyfill:enable = 0;
+!include "unicode_categories/unicode_categories.re";
 !include "word_breaks/unicode_word_breaks.re";
 !include "emoji_sequences/emoji_sequences.re";
 

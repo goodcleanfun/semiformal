@@ -6,6 +6,7 @@
   "keywords": ["tokenizer", "lexer", "re2c", "fsa", "semiformal"],
   "dependencies": {
     "goodcleanfun/token_types": "*",
+    "goodcleanfun/unicode_categories": "*",
     "goodcleanfun/word_breaks": "*",
     "goodcleanfun/emoji_sequences": "*",
     "goodcleanfun/tokens": "*"
