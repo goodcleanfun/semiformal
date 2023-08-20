@@ -39,6 +39,13 @@ Special tokens
 // A non-US phone number (must have country code)
 #define TOKEN_TYPE_INTL_PHONE 23
 
+/******************
+Emoticons and Emoji
+*******************/
+
+#define TOKEN_TYPE_EMOTICON 40
+#define TOKEN_TYPE_EMOJI 41
+
 /************************
 Numbers and numeric types
 *************************/

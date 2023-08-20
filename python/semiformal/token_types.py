@@ -12,6 +12,8 @@ class TokenType(enum.Enum):
     URL = 21
     US_PHONE = 22
     INTL_PHONE = 23
+    EMOTICON = 40
+    EMOJI = 41
     NUMERIC = 50
     ORDINAL = 51
     ROMAN_NUMERAL = 52
