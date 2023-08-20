@@ -17,6 +17,7 @@ uint16_t scan_token(scanner_t *s)
 /*!re2c
 re2c:yyfill:enable = 0;
 !include "word_breaks/unicode_word_breaks.re";
+!include "emoji_sequences/emoji_sequences.re";
 
 // Start rules
 
@@ -143,6 +144,7 @@ invalid_chars = ({control_chars}|{other_format_chars}|{other_private_use_chars})
 
 {email}                         { return TOKEN_TYPE_EMAIL; }
 {url}                           { return TOKEN_TYPE_URL; }
+{emoji}                         { return TOKEN_TYPE_EMOJI; }
 
 {ellipsis}                      { return TOKEN_TYPE_ELLIPSIS; }
 
