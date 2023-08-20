@@ -122,6 +122,7 @@ invalid_chars = ({control_chars}|{other_format_chars}|{other_private_use_chars})
 
 {email}                         { return TOKEN_TYPE_EMAIL; }
 {url}                           { return TOKEN_TYPE_URL; }
+
 {emoji}                         { return TOKEN_TYPE_EMOJI; }
 
 {ellipsis}                      { return TOKEN_TYPE_ELLIPSIS; }
