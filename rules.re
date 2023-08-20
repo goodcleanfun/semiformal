@@ -88,7 +88,7 @@ katakana = {katakana_chars}+;
 // WB13a and WB13b
 word_extend_num_letter = ({letter}|{numeric_chars}|{katakana}|{extend_num_letter_chars})+{extend_num_letter_chars}({letter}|{numeric_chars}|{katakana}|{extend_num_letter_chars})*;
 
-possible_word_char = {letter}|{mark_spacing_combining_chars}|{mark_enclosing_chars}|{mark_nonspacing_chars}|{punct_connector_chars}|{currency_symbol_chars}|{symbol_modifier_chars}|{symbol_math_chars}|{symbol_other_chars}|{digit};
+possible_word_char = {letter}|{mark_spacing_combining_chars}|{mark_enclosing_chars}|{mark_nonspacing_chars}|{punct_connector_chars}|{currency_symbol_chars}|{symbol_modifier_chars}|{symbol_math_chars}|{digit};
 any_word = (({possible_word_char}*{letter}+{possible_word_char}*{non_breaking_dash})*{possible_word_char}*{letter}+{possible_word_char}*);
 
 // GB6, GB7 & GB8
